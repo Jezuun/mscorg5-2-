@@ -55,7 +55,7 @@ public class MusicOrganizer
     {
         if(indexValid(index)) {
             Track track = tracks.get(index);
-            Stop.playing();
+            Stop.playing();// to be tested out on main pc pls thx
             player.startPlaying(track.getFilename());
             System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
             track.incrementPlayCount();
